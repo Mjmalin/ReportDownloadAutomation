@@ -33,7 +33,7 @@ lea = {
     'WV' : '013xxxx'
 }
 ```
-The program then loops through all the reports and schools, preparing all the required fields for the cc.download function imported from the calpads program.
+The program then loops through all the reports and schools, preparing all the required fields for the cc.download_report function imported from the calpads program.
 
 ```bash
 # loops through reports and schools, prepares for download    
@@ -47,7 +47,7 @@ for school in school_list:
             'LEA': 'Citizens of the World Charter School Hollywood',
             'SchoolName': {
 
-                'Citizens of the World Charter School Hollywood-0122556': True,
+                'Citizens of the World Charter School Hollywood-012xxxx': True,
                 'NPS School Group for Citizens of the World Charter School Hollywood-0000001': True
             }
         }
@@ -58,7 +58,7 @@ for school in school_list:
             'ThrouDate': '06/30/2024',
             'SchoolName': {
 
-                'Citizens of the World Charter School Hollywood-0122556': True,
+                'Citizens of the World Charter School Hollywood-012xxxx': True,
                 'NPS School Group for Citizens of the World Charter School Hollywood-0000001': True
             }
         }
@@ -69,7 +69,7 @@ for school in school_list:
 
             'SchoolName': {
 
-                'Citizens of the World Charter School Mar Vista-0126193': True,
+                'Citizens of the World Charter School Mar Vista-012xxxx': True,
                 'NPS School Group for Citizens of the World Charter School Mar Vista-0000001': True
             }
         }
@@ -80,7 +80,7 @@ for school in school_list:
             'ThrouDate': '06/30/2024',
             'SchoolName': {
 
-                'Citizens of the World Charter School Mar Vista-0126193': True,
+                'Citizens of the World Charter School Mar Vista-012xxxx': True,
                 'NPS School Group for Citizens of the World Charter School Mar Vista-0000001': True
             }
         }
@@ -91,7 +91,7 @@ for school in school_list:
 
             'SchoolName': {
 
-                'Citizens of the World Charter School Silver Lake-0126177': True,
+                'Citizens of the World Charter School Silver Lake-012xxxx': True,
                 'NPS School Group for Citizens of the World Charter School Silver Lake-0000001': True
             }
         }
@@ -102,7 +102,7 @@ for school in school_list:
             'ThrouDate': '06/30/2024',
             'SchoolName': {
 
-                'Citizens of the World Charter School Silver Lake-0126177': True,
+                'Citizens of the World Charter School Silver Lake-012xxxx': True,
                 'NPS School Group for Citizens of the World Charter School Silver Lake-0000001': True
             }
         }
@@ -113,7 +113,7 @@ for school in school_list:
 
             'SchoolName': {
 
-                'Citizens of the World Charter School East Valley-0140749': True,
+                'Citizens of the World Charter School East Valley-014xxxx': True,
                 'NPS School Group for Citizens of the World Charter School East Valley-0000001': True
             }
         }
@@ -124,7 +124,7 @@ for school in school_list:
             'ThrouDate': '06/30/2024',
             'SchoolName': {
 
-                'Citizens of the World Charter School East Valley-0140749': True,
+                'Citizens of the World Charter School East Valley-014xxxx': True,
                 'NPS School Group for Citizens of the World Charter School East Valley-0000001': True
             }
         }
@@ -135,7 +135,7 @@ for school in school_list:
 
             'SchoolName': {
 
-                'Citizens of the World Charter School West Valley-0139832': True,
+                'Citizens of the World Charter School West Valley-013xxxx': True,
                 'NPS School Group for Citizens of the World Charter School West Valley-0000001': True
             }
         }
@@ -146,13 +146,13 @@ for school in school_list:
             'ThrouDate': '06/30/2024',
             'SchoolName': {
 
-                'Citizens of the World Charter School West Valley-0139832': True,
+                'Citizens of the World Charter School West Valley-013xxxx': True,
                 'NPS School Group for Citizens of the World Charter School West Valley-0000001': True
             }
         }
 ```
 
-Finally, the cc.download function, with all of the required fields. 
+Finally, the cc.download_report function, with all of the required fields. 
 
 ```bash
         # downloads all reports
